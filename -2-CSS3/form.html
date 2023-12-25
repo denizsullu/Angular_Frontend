@@ -12,8 +12,9 @@
   </head>
   <body>
     <!-- Start code -->
-    <h1>Form Register</h1>
-    <form action="#" method="get" autocomplete="on">
+    <h1 id="form-register-heading">Form Register</h1>
+    <h6 class="form-register-child">Register UI</h6>
+    <form action="#" method="get" autocomplete="on" id="form_id">
       <div class="form_object">
         <label for="uname">Adınız</label>
         <input
@@ -25,6 +26,7 @@
           title="Adınızi gir"
           autofocus
         />
+        <p class="validation-input" id="validation-name">Adınızı girmediniz</p>
       </div>
       <div class="form_object">
         <label for="uname">Soyadınız</label>
@@ -73,8 +75,8 @@
         <input type="checkbox" name="java" id="java" checked />Java
         <input type="checkbox" name="html5" id="html5" />html5
         <input type="checkbox" name="css3" id="css3" />css3
-        <input type="checkbox" name="angular" id="angular" />Angular
-        <input type="checkbox" name="react" id="react" />React
+        <input type="checkbox" name="angular" id="angular" checked/>Angular
+        <input type="checkbox" name="react" id="react" checked/>React
       </div>
       <!-- Submit -->
       <div class="form_object">

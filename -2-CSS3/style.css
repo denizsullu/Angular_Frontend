@@ -29,3 +29,55 @@ ul{
 a{
     text-decoration: none;
 }
+
+#form-register-heading{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0.5rem;
+
+
+}
+.form-register-child{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+
+}
+/* INPUT */
+
+input[type="text"],input[type="password"],input[type="email"] {
+    border-radius: 0.3rem;
+    display: block;
+    padding: 0.4rem;
+    margin-left: 0.2rem;
+    transition: all 0.3s ease-in-out;
+}   
+
+input[type="text"]:hover,input[type="password"]:hover,input[type="email"]:hover {
+    background-color: var(--template-color);
+    columns: var(--template-bg-color);
+    padding: 0.6rem;
+}
+#form_id{
+    background-color: aqua;
+}
+/* Input all object */
+.form_object{
+    margin: 0 auto;
+    width: 75%;
+    padding: 1rem;
+    box-shadow: 0 0 0 rebeccapurple;
+    background-color: black;
+    margin-bottom: 1rem;
+}
+.validation-input{
+    color: red;
+    display: none;
+}
+label{
+    display: block;
+    margin-bottom: .4rem;
+}
