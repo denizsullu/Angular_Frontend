@@ -1,0 +1,31 @@
+/* 
+Autoher: Deniz Süllü
+Date: 20/12/2023
+*/
+/* root */
+:root{
+    --template-bg-color: #f2f2f2;
+    --template-color: #484848;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+
+}
+
+body{
+    background-color: var(--template-bg-color);
+    color: var(--template-color);
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
