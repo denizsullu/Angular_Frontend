@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="output.css">
     <title>Document</title>
 </head>
-<body class="h-full">
+<body class="h-full bg-gradient-to-r from-indigo-500">
 
 <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
@@ -20,10 +20,10 @@
     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
         <form class="space-y-5">
             <div>
-                <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address </label>
+                <label for="email" class="block text-l font-medium leading-6 text-gray-900">Email address </label>
                 <div class="mt-2 relative">
                     <input id="email" type="email" autocomplete="email"
-                           class="block peer w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-7">
+                           class="block peer w-full font-medium rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-7">
                     <img src="./images/icons/user.svg" alt="userpng" class="absolute top-1.5 left-0">
                     <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm absolute right-0 -translate-y-9">
                         Please provide a valid email address
@@ -33,10 +33,13 @@
 
             <div>
                 <div class="flex items-center justify-between">
-                    <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+                    <label for="password" class="block text-l font-medium leading-6 text-gray-900">Password</label>
                     <div class="text-sm">
-                        <a href="#" class="font-semibold text-indigo-600 hover:text-indigo-500">Forgot password?</a>
+                        <a href="#" class="font-semibold text-indigo-700 hover:text-indigo-500 underline transition duration-300 ease-in-out">
+                            Forgot password?
+                        </a>
                     </div>
+
                 </div>
                 <div class="mt-2 relative">
                     <input id="password" name="password" type="password" autocomplete="current-password" required
@@ -47,32 +50,21 @@
 
             <div>
                 <button type="submit"
-                        class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                        class="flex w-full justify-center rounded-md bg-indigo-500 px-4 py-2 text-sm font-semibold leading-6 text-white shadow-md transition duration-300 ease-in-out hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:ring-offset-2">
                     Sign in
                 </button>
 
+
             </div>
-            <p class="text-center">Dont your account?</p>
+            <p class="text-center">Don't your account?</p>
             <button type="submit"
-                    class="flex w-full justify-center rounded-md bg-amber-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                    class="flex w-full justify-center rounded-md bg-amber-500 px-4 py-2 text-sm font-semibold leading-6 text-white shadow-lg transition duration-300 ease-in-out hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2">
                 Sign Up
             </button>
+
         </form>
     </div>
 </div>
-
-<fieldset>
-    <legend>Published status</legend>
-
-    <input id="draft" class="peer/draft" type="radio" name="status" checked />
-    <label for="draft" class="peer-checked/draft:text-sky-500">Draft</label>
-
-    <input id="published" class="peer/published" type="radio" name="status" />
-    <label for="published" class="peer-checked/published:text-sky-500">Published</label>
-
-    <div class="hidden peer-checked/draft:block">Drafts are only visible to administrators.</div>
-    <div class="hidden peer-checked/published:block">Your post will be publicly visible on your site.</div>
-</fieldset>
 
 
 </body>
