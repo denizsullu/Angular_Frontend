@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-full bg-white">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,38 +8,71 @@
     <link rel="stylesheet" href="output.css">
     <title>Document</title>
 </head>
-<body>
-<section class="min-h-screen flex justify-center items-center">
-    <div class="flex gap-2 w-full"> <!--Login page-->
-        <div class="lg:w-1/2 w-5/6  ml-auto mr-auto "><!--Form section-->
-            <form class="flex flex-col gap-3.5 ml-auto w-full lg:w-1/2"><!--Form-->
-                <div class="w-full relative ">
-                    <img src="./images/icons/user.svg" alt="usericon" class="absolute top-1 left-1.5 translate-y-1/2">
-                    <input type="text"
-                           class="text-xl p-3 border border-black rounded-xl pl-8 pr-3 w-full peer placeholder:text-primary"
-                           placeholder="username" id="username" name="username" required>
-                </div>
+<body class="h-full">
 
-                <div class="relative">
-                    <img src="./images/icons/lock.svg" alt="lock" class="absolute top-1 left-1.5 translate-y-1/2">
-                    <input type="password" class="text-xl p-3 border border-black rounded-xl px-8 w-full"
-                           placeholder="password" id="password" name="password" required>
-                </div>
-                <button class="bg-purple-800 border border-black rounded-xl text-2xl text-white py-3 hover:bg-purple-600">
-                    Login
-                </button>
-            </form>
-        </div>
-        <div class="lg:w-1/2 border hidden lg:block "><!--Image section-->
-            <img src="./images/loginImage.jpg" class="rounded-xl w-1/2">
-        </div>
+<div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+        <img class="mx-auto h-10 w-auto" src="./images/login.png" alt="Your Company">
+        <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-normal text-gray-900">Sign in to your
+            account</h2>
     </div>
-</section>
-<!--First commit in 2024 :) -->
-<div class="text-center p-6 bg-green-300">
-    <h1 class="text-4xl font-bold text-white">🎉 Mutlu Yıllar 2024!  🎉</h1>
-    <p class="text-xl text-white">Yeni yılın tüm dileklerini gerçekleştirmen dileğiyle...</p>
+
+    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <form class="space-y-5">
+            <div>
+                <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address </label>
+                <div class="mt-2 relative">
+                    <input id="email" type="email" autocomplete="email"
+                           class="block peer w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-7">
+                    <img src="./images/icons/user.svg" alt="userpng" class="absolute top-1.5 left-0">
+                    <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm absolute right-0 -translate-y-9">
+                        Please provide a valid email address
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex items-center justify-between">
+                    <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+                    <div class="text-sm">
+                        <a href="#" class="font-semibold text-indigo-600 hover:text-indigo-500">Forgot password?</a>
+                    </div>
+                </div>
+                <div class="mt-2 relative">
+                    <input id="password" name="password" type="password" autocomplete="current-password" required
+                           class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-8">
+                    <img src="./images/icons/lock.svg" alt="userpng" class="absolute top-1.5 left-1">
+                </div>
+            </div>
+
+            <div>
+                <button type="submit"
+                        class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                    Sign in
+                </button>
+
+            </div>
+            <p class="text-center">Dont your account?</p>
+            <button type="submit"
+                    class="flex w-full justify-center rounded-md bg-amber-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                Sign Up
+            </button>
+        </form>
+    </div>
 </div>
+
+<fieldset>
+    <legend>Published status</legend>
+
+    <input id="draft" class="peer/draft" type="radio" name="status" checked />
+    <label for="draft" class="peer-checked/draft:text-sky-500">Draft</label>
+
+    <input id="published" class="peer/published" type="radio" name="status" />
+    <label for="published" class="peer-checked/published:text-sky-500">Published</label>
+
+    <div class="hidden peer-checked/draft:block">Drafts are only visible to administrators.</div>
+    <div class="hidden peer-checked/published:block">Your post will be publicly visible on your site.</div>
+</fieldset>
 
 
 </body>
