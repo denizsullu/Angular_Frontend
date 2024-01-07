@@ -1,0 +1,28 @@
+@media (max-width: 768px)
+ {
+  body{
+    background-color: var(--White);
+  }
+  .card-desing{
+    width: 100vw;
+    height: 106vh;
+    flex-direction: column;
+    box-shadow: none;
+  }
+  .main-contents2{
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  button{
+    margin: 1.3rem 0;
+  }
+  .section2{
+    width: 60%;
+    height: 100%;
+  }
+
+ }

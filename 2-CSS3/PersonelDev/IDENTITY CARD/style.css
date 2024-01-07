@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 10px;
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    width: 500px;
+    height: 280px;
+    background-color: rgb(199, 221, 221);
+    padding: 1.9rem;
+    border-radius: 2rem;
+}
+h1{
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 400;
+}
+h2{
+    font-size: 1.2rem;
+    text-align: center; 
+    font-weight: 400;
+}
+h3,h4{
+ font-weight: 400;
+
+}
+h3{
+    font-size: 1.2rem;
+}
+.image{
+    height: 17rem;
+    margin-top: 2rem;
+}
+
+.leftright{
+    display: flex;
+
+}
+.left{
+    width: 13rem;
+}
+.right{
+   margin-top: 0rem;
+   margin-left: 2rem;
+}
+.right-text{
+    margin-top: .7em;
+}
+
+.rightleft{
+    display: flex;
+
+}
+.leftt{
+    margin-top: 3.78rem;
+
+}
+.image2{
+    width: 10rem;
+    margin-left: 3rem;
+    
+}
+.leftt{
+    margin-left: 2rem;
+}
+.ikiye{
+    display: flex;
+    margin-top: 2.7rem;
+    margin-left: 1.2rem;
+}
+.image4{
+    width: 5rem;
+    margin-left: 3rem;
+    margin-top: 0rem;
+}

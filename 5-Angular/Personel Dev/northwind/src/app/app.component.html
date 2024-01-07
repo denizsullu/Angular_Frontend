@@ -1,0 +1,61 @@
+<!-- @if (condition) {
+  <div>
+    <h1>true</h1>
+  </div>
+} @else {
+  <h1>false</h1>
+}
+
+
+
+
+@if(!condition; as result){
+  burada angular 17 gelen if <br>
+  {{result}}
+}
+@else if (3 === 3) {
+burayı yansıt
+}
+<ul>
+  @for (number of numbers; track number) {
+    <li>
+      {{number}}
+    </li>
+  }
+</ul>
+
+<hr>
+
+  <ul>
+    @for(number of numbers;track number;let i= $index; let f =$first;let l =$last){
+      <li>{{number}} - {{i}} --{{f}} - {{l}}</li>
+    }
+    @empty {
+    <li><strong>No numbers</strong></li>
+  }
+</ul>
+
+@switch (data) {
+  @case (1) {
+    1'e eşit
+  }
+  @case (2) {
+    2'e eşit
+  }
+  @default {
+    hiçbiri
+  }
+} -->
+<!--Welcome to {{title}} <br>-->
+<!--Hello {{user}} <br>-->
+<!--{{product1.productName}}-->
+
+<!--<ul>-->
+<!--  <li *ngFor="let product of products">{{ product.productName }}</li>-->
+<!--</ul>-->
+<app-navi></app-navi>
+<app-category></app-category>
+<app-product></app-product>
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,21 @@
+
+<table class="mx-auto table-auto border border-slate-400 border-spacing-2 max-w-screen-md w-full" >
+  <thead>
+  <tr>
+    <th class="border border-slate-300 ">ProductId</th>
+    <th class="border border-slate-300 ">ProductName</th>
+    <th class="border border-slate-300 ">CategoryId</th>
+    <th class="border border-slate-300 ">Unit Price</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let product of products">
+    <td class="border border-slate-300 text-center ">{{ product.productId }}</td>
+    <td class="border border-slate-300 text-center">{{ product.productName }}</td>
+    <td class="border border-slate-300 text-center">{{ product.categoryId }}</td>
+    <td class="border border-slate-300 text-center">{{ product.unitPrice }}</td>
+  </tr>
+  </tbody>
+</table>
+
+

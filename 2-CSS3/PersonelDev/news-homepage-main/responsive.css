@@ -1,0 +1,33 @@
+@media (max-width: 575.98px)
+ { 
+ .navbar-container{
+  width: 90%;
+ }
+ .navbar-item-right > ul li{
+  display: none;
+ }
+ .navbar-item-right > ul li:first-child{
+  display: block;
+}
+.main-container{
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  justify-content: flex-start;
+}
+.content-left-content{
+  flex-direction: column;
+}
+.container-footer{
+  width: 90%;
+  flex-direction: column;
+  gap: 2rem;
+}
+.content-footer >h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.content-footer > h2{
+  margin-bottom: 1rem;
+}
+ }
