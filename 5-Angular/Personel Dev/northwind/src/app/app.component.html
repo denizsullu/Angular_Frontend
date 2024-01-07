@@ -54,8 +54,12 @@ burayı yansıt
 <!--  <li *ngFor="let product of products">{{ product.productName }}</li>-->
 <!--</ul>-->
 <app-navi></app-navi>
-<app-category></app-category>
-<app-product></app-product>
+<div class="flex w-full mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 gap-2 mt-4 flex-col md:flex-row" >
+  <app-category class="w-1/4"></app-category>
+  <app-product class="w-3/4"></app-product>
+</div>
+
+
 
 
 <router-outlet></router-outlet>
