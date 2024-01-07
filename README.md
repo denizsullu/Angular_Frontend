@@ -32,7 +32,21 @@ However, the real challenge came when we started working with Tailwind CSS. This
 
 Overall, this week has been a valuable learning experience. I am continuously improving and looking forward to diving deeper into more advanced topics in the coming weeks.
 
-### Week 2: JavaScript & TypeScript - A New Language and a New Challenge
+### Week 2: JavaScript & Tailwind CSS - Reinforcing Fundamentals and Exploring New Horizons
+This week was dedicated to consolidating my understanding of JavaScript fundamentals and diving deeper into Tailwind CSS. My background in Java greatly facilitated grasping JavaScript concepts.
+
+JavaScript: Solidifying Basics
+Core Concepts: Focused on JavaScript's fundamental concepts like variables, functions, loops, and conditional statements.
+Practical Examples: Applied these concepts in small-scale projects and exercises to reinforce learning.
+Comparing with Java: My Java knowledge aided in quickly adapting to JavaScript, allowing me to understand the similarities and differences between the two languages.
+Tailwind CSS: Beyond the Basics
+Advanced Styling Techniques: Explored the utility-first approach of Tailwind CSS in more depth and implemented it in my projects.
+Responsive Design: Enhanced my skills in modern web design by applying responsive design principles using Tailwind CSS.
+Creative Design Implementations: Undertook more complex and creative design tasks with Tailwind CSS, opening a new avenue of learning for me.
+Introduction to Angular
+Personal Progress: Although the bootcamp has not yet started on Angular, I began learning it on my own. This will prepare me for the upcoming weeks when Angular becomes the primary focus.
+This week, while expanding my skills in JavaScript and Tailwind CSS, I also began my journey with Angular. Each new concept and technology is further advancing my web development capabilities.
+
 
 Thank you for visiting my project repository. Feel free to explore my code and reach out if you have any questions or suggestions.
 
