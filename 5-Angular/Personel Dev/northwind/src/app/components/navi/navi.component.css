@@ -1,0 +1,6 @@
+mat-icon svg {
+  width: 4em;  /* veya başka bir boyut */
+  height: 3em; /* boyutla orantılı olmalı */
+  font-size: 40px;
+  fill: currentColor; /* İkon rengini text rengiyle eşitlemek için */
+}

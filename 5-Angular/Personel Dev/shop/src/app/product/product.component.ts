@@ -18,6 +18,7 @@ export class ProductComponent {
     private alertifyService: AlertifyService,
     private http: HttpClient
   ) {}
+
   title: string = 'Ürün Listesi';
   filterText = '';
   products: Product[];

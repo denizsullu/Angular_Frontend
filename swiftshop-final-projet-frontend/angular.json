@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "SwiftShop-Final-Project": {
+    "swiftshop-final-projet-frontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/swift-shop-final-project",
+            "outputPath": "dist/swiftshop-final-projet-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "SwiftShop-Final-Project:build:production"
+              "buildTarget": "swiftshop-final-projet-frontend:build:production"
             },
             "development": {
-              "buildTarget": "SwiftShop-Final-Project:build:development"
+              "buildTarget": "swiftshop-final-projet-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "SwiftShop-Final-Project:build"
+            "buildTarget": "swiftshop-final-projet-frontend:build"
           }
         },
         "test": {

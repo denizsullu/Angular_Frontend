@@ -1,17 +1,17 @@
-<ul class="max-w-xs flex flex-col">
-  <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium odd:bg-gray-100 bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:odd:bg-slate-800 dark:bg-slate-900 dark:border-gray-700 dark:text-white">
-    Profile
-  </li>
-  <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium odd:bg-gray-100 bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:odd:bg-slate-800 dark:bg-slate-900 dark:border-gray-700 dark:text-white">
-    Settings
-  </li>
-  <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium odd:bg-gray-100 bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:odd:bg-slate-800 dark:bg-slate-900 dark:border-gray-700 dark:text-white">
-    Newsletter
-  </li>
-  <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium odd:bg-gray-100 bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:odd:bg-slate-800 dark:bg-slate-900 dark:border-gray-700 dark:text-white">
-    Downloads
-  </li>
-  <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium odd:bg-gray-100 bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:odd:bg-slate-800 dark:bg-slate-900 dark:border-gray-700 dark:text-white">
-    Team Account
-  </li>
-</ul>
+<div class="w-full ">
+  <ul class="flex flex-col">
+
+    <li (click)="cleanCurrentCategory()"  routerLink="/products" [class]="allCategoryClass()">Tüm Ürünler</li>
+
+    @for (item of categories; track categories) {
+      <li (click)="setCurrentCategory(item)"
+        routerLink="/products/category/{{item.categoryId}}"
+        [class]="getCurrentCategoryClass(item)">
+        {{ item.categoryName + " " + item.categoryId }}
+      </li>
+    }
+  </ul>
+</div>
+@if (currentCategory) {
+  <h5>{{ currentCategory.categoryName }} seçtiniz </h5>
+}

@@ -1,3 +1,5 @@
 <ul>
-  <li>deniz</li>
+  @for (item of todos;track todos){
+    <li>{{item.title}}</li>
+  }
 </ul>

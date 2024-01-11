@@ -10,5 +10,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'SwiftShop-Final-Project';
+  title = 'swiftshop-final-projet-frontend';
 }

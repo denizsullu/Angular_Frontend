@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'SwiftShop-Final-Project' title`, () => {
+  it(`should have the 'swiftshop-final-projet-frontend' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('SwiftShop-Final-Project');
+    expect(app.title).toEqual('swiftshop-final-projet-frontend');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, SwiftShop-Final-Project');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, swiftshop-final-projet-frontend');
   });
 });

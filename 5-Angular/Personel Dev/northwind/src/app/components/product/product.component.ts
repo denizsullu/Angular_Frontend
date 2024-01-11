@@ -1,35 +1,39 @@
 import {Component, OnInit} from '@angular/core';
-import {NgForOf} from "@angular/common";
-import {Product} from "../../models/product";
+
 import {Data} from "../../models/data";
-import {HttpClient} from "@angular/common/http";
-import {ProductResponseModel} from "../../models/productResponseModel";
+import {ProductService} from "../../services/product.service";
+import {delay} from "rxjs";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-product',
   standalone: true,
-  imports: [
-    NgForOf
-  ],
+  imports: [],
   templateUrl: './product.component.html',
   styleUrl: './product.component.css'
 })
 export class ProductComponent implements OnInit{
-  item: string = "deniz";
-  apiUrl: string ="http://localhost:3000/data";
-  // productResponseModel: ProductResponseModel;
-  products: Product[] = []
   data: Data[] = [];
-constructor(private htttpClient:HttpClient) {}
+constructor(private productService:ProductService,
+            private activatedRoute:ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.getProducts();
+    this.activatedRoute.params.subscribe(params => {
+      if(params["categoryId"]){
+        this.getProductsByCategory(params["categoryId"])
+      }
+      else{
+        this.getProducts();
+      }
+    })
   }
   getProducts(){
-    this.htttpClient.get<Data[]>(this.apiUrl)
-      .subscribe((response) => {
+  this.productService.getProducts().subscribe(response =>{
+    this.data = response;
+  })}
+  getProductsByCategory(categoryId:number){
+    this.productService.getProductsByCategory(categoryId).subscribe(response =>{
       this.data = response;
-    });
-  }
+    })}
 
 }
