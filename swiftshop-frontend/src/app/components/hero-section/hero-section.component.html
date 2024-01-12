@@ -1,0 +1,23 @@
+<div class="mx-auto relative">
+  <ngx-slick-carousel
+    class="carousel"
+    #slickModal="slick-carousel"
+    [config]="slideConfig"
+  >
+    @for (slide of slides; track slide) {
+    <div
+      ngxSlickItem
+      class="slide relative before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10"
+    >
+      <img
+        src="{{ slide.img }}"
+        alt=""
+        class="w-full xl:h-[500px] bg-cover bg-no-repeat"
+      />
+    </div>
+
+    }
+  </ngx-slick-carousel>
+
+</div>
+
